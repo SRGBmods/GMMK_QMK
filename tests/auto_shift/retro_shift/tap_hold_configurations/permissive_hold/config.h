@@ -18,6 +18,10 @@
 
 #include "test_common.h"
 
+<<<<<<<< HEAD:tests/auto_shift/retro_shift/tap_hold_configurations/permissive_hold/config.h
+========
+// place overrides here
+>>>>>>>> f4dfa218ff924f0e9f964f81706474a765c88cc2:keyboards/unikeyboard/diverge3/keymaps/iso_uk/config.h
 #define PERMISSIVE_HOLD
 
 #define RETRO_SHIFT 2 * TAPPING_TERM
