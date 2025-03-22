@@ -177,7 +177,6 @@ bool pmw33xx_init(uint8_t sensor) {
     } else {
         pd_dprintf("PMW33XX (%d): firmware upload skipped.\n", sensor);
     }
-#endif
 
     spi_stop();
 

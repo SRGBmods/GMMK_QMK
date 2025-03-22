@@ -34,7 +34,6 @@
 #        define SPI_SCK_PAL_MODE 5
 #    endif
 #endif
-}
 
 #ifndef SPI_MOSI_PIN
 #    define SPI_MOSI_PIN B15

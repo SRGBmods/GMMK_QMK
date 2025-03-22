@@ -521,10 +521,6 @@ ifeq ($(KEYMAP_C),)
     $(call CATASTROPHIC_ERROR,Invalid keymap,Could not find keymap)
 endif
 
-ifeq ($(KEYMAP_C),)
-    $(call CATASTROPHIC_ERROR,Invalid keymap,Could not find keymap)
-endif
-
 OPT_DEFS += -DKEYMAP_C=\"$(KEYMAP_C)\"
 
 # If a keymap or userspace places their keymap array in another file instead, allow for it to be included
