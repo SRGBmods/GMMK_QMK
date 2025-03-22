@@ -17,11 +17,7 @@
 #include "quantum.h"
 #include "quantum_keycodes.h"
 
-<<<<<<<< HEAD:quantum/process_keycode/process_default_layer.c
 #if !defined(NO_ACTION_LAYER)
-========
-#include "quantum.h"
->>>>>>>> f4dfa218ff924f0e9f964f81706474a765c88cc2:keyboards/ckeys/thedora/thedora.c
 
 bool process_default_layer(uint16_t keycode, keyrecord_t *record) {
     if (IS_QK_PERSISTENT_DEF_LAYER(keycode) && !record->event.pressed) {

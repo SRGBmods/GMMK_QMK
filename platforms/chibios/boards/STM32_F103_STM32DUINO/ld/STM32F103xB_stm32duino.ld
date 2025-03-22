@@ -20,15 +20,4 @@
 f103_flash_size = 128k;
 f103_ram_size = 20k;
 
-<<<<<<<< HEAD:platforms/chibios/boards/STM32_F103_STM32DUINO/ld/STM32F103xB_stm32duino.ld
 INCLUDE stm32duino_bootloader_common.ld
-========
-#include "annepro2.h"
-
-void annepro2_ble_bootload(void);
-void annepro2_ble_startup(void);
-void annepro2_ble_broadcast(uint8_t port);
-void annepro2_ble_connect(uint8_t port);
-void annepro2_ble_disconnect(void);
-void annepro2_ble_unpair(void);
->>>>>>>> f4dfa218ff924f0e9f964f81706474a765c88cc2:keyboards/annepro2/annepro2_ble.h

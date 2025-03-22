@@ -34,7 +34,6 @@
 #        define SPI_SCK_PAL_MODE 5
 #    endif
 #endif
-}
 
 #ifndef SPI_MOSI_PIN
 #    define SPI_MOSI_PIN B15
@@ -76,7 +75,6 @@ static inline void spi_select(void) {
         gpio_write_pin(current_slave_pin, current_cs_active_low ? 0 : 1);
     }
 #endif
-}
 
 static inline void spi_unselect(void) {
 #if SPI_SELECT_MODE == SPI_SELECT_MODE_NONE

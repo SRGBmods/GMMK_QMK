@@ -16,10 +16,7 @@
 
 #pragma once
 
-<<<<<<<< HEAD:tests/auto_shift/retro_shift/tap_hold_configurations/hold_on_other_key_press/config.h
 #include "test_common.h"
-========
->>>>>>>> f4dfa218ff924f0e9f964f81706474a765c88cc2:keyboards/atreyu/keymaps/default/config.h
 
 #define HOLD_ON_OTHER_KEY_PRESS
 
