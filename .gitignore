@@ -117,3 +117,6 @@ compile_commands.json
 .cache/
 
 .vscode/settings.json
+/docs
+/keyboard/*
+!gmmk
