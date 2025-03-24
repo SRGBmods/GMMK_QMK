@@ -30,6 +30,10 @@
 #define SPI_MOSI_PIN A7
 #define SPI_MISO_PIN A6
 
+#define SPI_SCK_PAL_MODE 5
+#define SPI_MOSI_PAL_MODE 5
+#define SPI_MISO_PAL_MODE 5
+
 #define AW20216S_CS_PIN_1 C5
 #define AW20216S_CS_PIN_2 B11
 #define AW20216S_EN_PIN   C13
