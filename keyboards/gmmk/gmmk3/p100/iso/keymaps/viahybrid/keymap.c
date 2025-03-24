@@ -44,7 +44,8 @@ enum custom_layers {
 
 
 enum custom_keycodes {
-    ORGB = SAFE_RANGE
+    ORGB = SAFE_RANGE,
+    OWO
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
@@ -64,6 +65,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
             }
         #endif
         break;
+        case OWO:
+            if(record->event.pressed)
+            {
+                send_unicode_string("ΟωΟ");
+            } else {
+
+            }
+            break;
         default:
             return true; // Process all other keycodes normally
     }
@@ -84,10 +93,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Function Layer */
     [_FL] = LAYOUT(
-        _______,            KC_MYCM,  KC_WHOM,  KC_CALC,  KC_MSEL,  KC_MPRV,  KC_MNXT,  KC_MPLY,  KC_MSTP,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_PSCR,     _______,  _______,  _______,                                   _______,
+        ORGB,            KC_MYCM,  KC_WHOM,  KC_CALC,  KC_MSEL,  KC_MPRV,  KC_MNXT,  KC_MPLY,  KC_MSTP,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_PSCR,     _______,  _______,  _______,                                   _______,
 
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,  _______,  _______,     _______,  _______,  _______,  _______,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  ORGB,  _______,  _______,  _______,               _______,  _______,  _______,     _______,  _______,  _______,  _______,
+        _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  OWO,  _______,  _______,  _______,               _______,  _______,  _______,     _______,  _______,  _______,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,                                      _______,  _______,  _______,
         _______,  _______,  RM_SATD,  RM_SATU,  RM_SPDD,  RM_SPDU,  _______,  _______,  _______,  _______,  _______,  _______,            _______,               RM_VALU,               _______,  _______,  _______,  _______,
         _______,  GU_TOGG,  _______,                                _______,                                _______,  _______,  _______,  _______,     RM_PREV, RM_VALD,  RM_NEXT,     _______,            _______
