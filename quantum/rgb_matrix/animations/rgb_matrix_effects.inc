@@ -40,3 +40,4 @@
 #include "pixel_fractal_anim.h"
 #include "openrgb_direct_anim.h"
 #include "riverflow_anim.h"
+#include "signalrgb_anim.h"
